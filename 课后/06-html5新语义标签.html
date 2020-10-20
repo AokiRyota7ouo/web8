@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--语义标签-->
+    <br/>
+    <!--input新用法-->
+    <!--
+        1)fieldset
+        将表单内容的一部分打包，生成一组相关表单字段；
+        <legend>标签为fieldset元素定义标题
+    -->
+    <fieldset>
+        <legend>用户登录</legend>
+        用户名:<label><input type="text"></label><br>
+        密  码:<label><input type="password"></label><br>
+    </fieldset>
+    <br>
+
+    <!--
+        2)新增的type类型
+    -->
+    <form action="javascript:;">
+        颜色：<label><input type="color"></label><br>
+        邮箱：<label><input type="email"></label><br>
+        手机：<label><input type="tel"></label><br>
+        数字：<label><input type="number"></label><br>
+        url：<label><input type="url"></label><br>
+        搜索：<label><input type="search"></label><br>
+        区域：<label><input type="range"></label><br>
+        年月日：<label><input type="date"></label><br>
+        月份：<label><input type="month"></label><br>
+        星期：<label><input type="week"></label><br>
+        时间：<label><input type="time"></label><br>
+        <input type="submit">
+    </form>
+
+
+    <!--
+        2)新增的属性：
+        autofocus 自动获得焦点
+        required
+    -->
+    <form action="javascript:;">
+        姓名1：<label><input type="text" autofocus></label><br>
+        姓名2；<label><input type="text" required></label><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
