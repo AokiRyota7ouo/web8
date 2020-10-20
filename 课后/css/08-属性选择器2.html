@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class^=字符A 表示字符A处于开始位置都可以匹配 */
+        div[class^=like]{
+            color:red;
+        }
+        
+        /* class $=字符B 表示字符B处于结束位置都可以匹配 */
+        div[class$=liao]{
+            color:green;
+        }
+        /* class *=字符C 表示字符C处于任何位置都可以匹配 */
+        div[class*=it]{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="like01">like01</div>
+    <div class="like02">like02</div>
+    <div class="like03">like03</div>
+    <div class="like04">like04</div>
+    <div class="like05">like05</div>
+    <div class="06like">06like</div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="small-liao">小撩同学</div>
+    <div class="big-liao">大撩同学</div>
+    <div class="liao-da-da">撩大大同学</div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="sh-it.com">任意位置</div>
+    <div class="it-sh-com">任意位置</div>
+    <div class="com-sh-it">任意位置</div>
+</body>
+</html>

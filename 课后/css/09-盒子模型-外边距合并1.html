@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*外边距合并
+        垂直的块级盒子
+        以最大的外边距为准*/
+        div{
+            width: 200px;
+            height: 200px;
+            background-color:chartreuse;
+        }
+        div:first-child{
+            margin-bottom: 100px;
+        }
+        div:last-child{
+            background-color:rgb(195, 0, 255);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>
